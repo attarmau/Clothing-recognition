@@ -1,0 +1,13 @@
+import json
+import os
+from PIL import Image
+import numpy as np
+
+num_images = 30000  # number of images
+sub_index = 0  # the index of ground truth instance
+image_path = '/local/path/'  
+json_path = "/local/path/"
+json_name = 'deepfashion2.json'
+
+# Combine json_path and json_name to get the full path for the output file
+json_file_path = os.path.join(json_path, json_name)
