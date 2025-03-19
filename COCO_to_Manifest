@@ -74,6 +74,8 @@ with open(coco_json_file) as f:
     print(f'Annotations: {len(annotations)}')
     print(f'Categories: {len(categories)}')
 
+label_attribute = 'bounding-box' 
+
 print("Creating CL JSON lines...")
 
 images_dict = {image['id']: cl_json_line(label_attribute, image) for image in images}
